@@ -109,8 +109,8 @@ p {
 .site-nav {
   display: flex;
   margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* .site-nav .item-nav {
@@ -152,6 +152,10 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts .link:hover,
@@ -253,11 +257,20 @@ p {
 
 /* work */
 
+.section-work {
+  padding-top: 0;
+}
+
 .work-list {
   display: flex;
 }
 
 .work-card {
+  flex-basis: auto;
+
+}
+
+.work-list .work-card:not(:last-child) {
   margin-right: var(--card-gap);
 }
 
@@ -392,12 +405,10 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  margin-bottom: 9px;
 }
 
 /* footer contact */
-.footer-mail {
+.footer-items:not(:last-child) {
   margin-bottom: 9px;
 }
 
