@@ -167,14 +167,40 @@ p {
   color: var(--accent-color);
 }
 
+.hdr-mail::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+height: 12px;
+margin-right: 10px;
+background-image: url(../images/envelope.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
 /* Hero */
 
 .hero {
   background-color: var(--background-hero-footer);
   text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/herobgrnd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -206,6 +232,8 @@ p {
   padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-hero:hover,
@@ -287,6 +315,9 @@ p {
 
 .card-team {
   background-color: var(--total-white);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .list-team .card-team:not(:last-child) {
@@ -332,7 +363,11 @@ p {
   flex-basis: calc(100% / 3 - var(--card-gap));
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+
 
 .examples-content {
   padding: 20px 24px;
@@ -372,6 +407,8 @@ p {
   letter-spacing: 0.03em;
   border-color: transparent;
   border-radius: 4px;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
   padding: 6px 22px;
 }
