@@ -115,10 +115,7 @@ p {
   margin-left: 93px;
 }
 
-/* .site-nav .item-nav {
-  background-color: tomato;
- 
-} */
+
 .site-nav .item-nav:not(:last-child) {
   margin-right: 50px;
 }
@@ -152,12 +149,13 @@ p {
 
 .contacts .link {
   color: var(--primary-text-color);
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -167,17 +165,8 @@ p {
   color: var(--accent-color);
 }
 
-.hdr-mail::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-height: 12px;
-margin-right: 10px;
-background-image: url(../images/envelope.svg);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+.hdr-icon {
+  fill: currentColor;
 }
 
 /* Hero */
@@ -349,6 +338,16 @@ background-position: center;
   padding: var(--card-gap) 10px;
 }
 
+/* clients */
+
+.clients-title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+
+
 /* Examples */
 
 .examples {
@@ -363,8 +362,11 @@ background-position: center;
   flex-basis: calc(100% / 3 - var(--card-gap));
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
+  
+  }
 
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  .examples-card:hover {
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -408,9 +410,12 @@ background-position: center;
   border-color: transparent;
   border-radius: 4px;
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
   padding: 6px 22px;
+}
+
+.filtr-button:hover,
+.filtr-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filtr .filtr-item:not(:last-child) {
