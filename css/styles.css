@@ -21,6 +21,7 @@ html {
   box-sizing: border-box;
 }
 
+
 body {
   background-color: var(--total-white);
   color: var(--primary-text-color);
