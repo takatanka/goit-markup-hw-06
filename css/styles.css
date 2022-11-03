@@ -91,7 +91,7 @@ p {
 
 .header {
   background-color: var(--total-white);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -174,7 +174,7 @@ p {
 /* Hero */
 
 .hero {
-  background-color: var(--background-hero-footer);
+  background-color: #C4C4C4;;
   text-align: center;
   max-width: 1600px;
   margin-left: auto;
@@ -433,7 +433,11 @@ p {
   margin-top: var(--card-gap);
 }
 
-.examples-card:hover {
+.examples-link {
+  display: block;
+}
+
+.examples-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
