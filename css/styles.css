@@ -125,6 +125,7 @@ p {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -132,13 +133,38 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
+
+.link-nav::after {
+content: '';
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  opacity: 0;
+}
+
+.link-nav:hover.link-nav::after,
+.link-nav:focus.link-nav::after {
+  opacity: 1;
+}
+
 .link-nav:hover,
 .link-nav:focus {
   color: var(--accent-color);
+  
 }
 
-.link.current {
+.link.current.link-nav::after {
   color: var(--accent-color);
+  opacity: 1;
+  
 }
 .contacts {
   display: flex;
@@ -654,4 +680,34 @@ margin: 63px 24px;
 .social-link-footer:focus {
   fill: var(--total-white);
   background-color: var(--accent-color);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--total-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
 }
