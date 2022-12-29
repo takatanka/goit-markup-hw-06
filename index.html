@@ -456,6 +456,19 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-mail">
+          <p class="title-subscribe">Підпишіться на розсилку</p>
+          <form>
+            <input class="email-input" type="email" name="email" placeholder="E-mail"/>
+          
+          <button class="button-footer" type="submit">Підписатися 
+            <svg width="24" height="24">
+              <use href="images/icon.svg#send"></use>
+            </svg>
+          </button>
+       </form> 
+      </div>
+
       </div>
     </footer>
 
@@ -468,17 +481,24 @@
 </button>
 
 <form>
-  <label for="name">Ім'я</label>
-<input type="text" name="name" id="name" />
-
+  <ul>
+    <li>
+      <label for="name">Ім'я</label>
+    <input type="text" name="name" id="name" />
+</li>
+ <li>
 <label for="tel">Телефон</label>
 <input type="tel" name="tel" id="tel" />
-
+</li>
+<li>
 <label for="email">Пошта</label>
 <input type="email" name="email" id="email" />
-
+</li>
+<li>
 <label for="comment">Коментар</label>
 <textarea name="comment" id="comment" rows="10"></textarea>
+</li>
+</ul>
 
 <input type="checkbox" id="policy" name="policy" />
 <label for="policy">Погоджуюся з розсилкою та приймаю 
